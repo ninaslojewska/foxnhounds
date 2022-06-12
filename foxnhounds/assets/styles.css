@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(fonts/Segoe\ UI.woff);
+    }
+@font-face {
+    font-family: 'Bell MT';
+    src: url(fonts/BellMT.ttf);
+}
+@font-face {
+    font-family: 'Bell MT italic';
+    src: url(fonts/BellMTItalic.ttf);
+}
+@font-face {
+    font-family: 'Candara';
+    src: url(fonts/Candara.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+nav {
+    background-color: black;
+    text-decoration: none;
+    font-family: 'Bell MT';
+    width: 100%;
+    height: 7vw;
+    display:grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    justify-items:center;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    grid-column: 2;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+a:hover {
+    opacity: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+ul>li>a>img {
+    height: 2vw;
+    object-fit: cover;
+}
+main {
+    background-image: url("images/PFS_6615mørkere-redigeret.jpg");
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 25% 70%;
+    justify-items: center;
+    height: 55vw;
+    background-position: bottom center;
+    padding: 0;
+}
+main>img {
+    grid-column: 2;
+    grid-row: 2;
+    height: 10vw;
+    z-index: 1;
+
+}
+main>a {
+    grid-column: 2;
+    grid-row: 3;
+    z-index: 1;
+}
+main>a>img {
+    height: 30vw;
+}
+main>a:hover {
+    cursor: pointer;
+}
+#main-overlay {
+    display: block;
+    width: 100%;
+    height: 55vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#title {
+    background-image: url("images/PFS_6615mørkere-redigeret.jpg");
+    background-size: 100%;
+    background-position: center center;
+    height: 20vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20% 60% 20%;
+    border-top: 0.05vw solid #D7A771;
+    border-bottom: 0.05vw solid #D7A771;
+}
+#title>img {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    z-index: 1;
+}
+#title-overlay {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 20vw;
+    width: 100%;
+}
+#welcome {
+    background-color: #132130;
+    height: 30vw;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr 3fr 2fr;
+    font-family: 'Bell MT';
+    text-align: center;
+    align-items: center;
+    border-bottom: 0.05vw solid #D7A771;
+}
+#welcome-text {
+    grid-column: 2;
+}
+h1 {
+    font-size: 2vw;
+}
+h2 {
+    font-size: 1.5vw;
+    color: #D7A771;
+}
+#welcome-text>img {
+    width: 100%;
+}
+#welcome-buttons {
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+}
+#welcome-buttons>button {
+    width: 100%;
+    height: 5vw;
+    background-color: black;
+    border: 0.05vw solid #D7A771;
+    font-family: 'Bell MT';
+}
+#button2 {
+    grid-row: 3
+}
+#welcome-buttons>button>a {
+    font-size: 2vw;
+}
