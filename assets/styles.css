@@ -25,23 +25,24 @@ nav {
     text-decoration: none;
     font-family: 'Bell MT';
     width: 100%;
-    height: 7vw;
+    height: 3vw;
     display:grid;
     grid-template-columns: 15% 70% 15%;
-    align-items: center;
-    justify-items:center;
 }
 ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin: 0;
     grid-column: 2;
+    padding: 0;
 }
 a {
     color: white;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+    margin: 0;
 }
 a:hover {
     opacity: 50%;
@@ -50,6 +51,7 @@ a:hover {
 }
 ul>li>a>img {
     height: 2vw;
+    padding-top: 0.5vw;
     object-fit: cover;
 }
 main {
@@ -163,9 +165,9 @@ h2 {
 footer {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 10% 70% 10% 10%;
+    grid-template-rows: 10% 85% 5%;
     color: white;
-    height: 25vw;
+    height: 22vw;
 }
 #columns {
     grid-column: 2;
@@ -177,6 +179,7 @@ footer>h5 {
     grid-row: 3;
     grid-column: 2;
     text-align: center;
+    margin: 0;
 }
 #columns>div>img {
     width: 80%
@@ -209,4 +212,50 @@ h5 {
 }
 #social-buttons>button>img {
     width: 2vw;
+}
+#menu-covers {
+    width: 100%;
+    height: 55vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#drinks-cover {
+    background-image: url(images/drinks.jpg);
+    background-size: 195%;
+    background-position: top center;
+    display: grid;
+    grid-template-rows: 45% 10% 45%;
+    grid-template-columns: 30% 40% 30%;
+}
+#foods-cover {
+    background-image: url(images/foods.jpg);
+    background-size: 200%;
+    background-position: center center;
+    display: grid;
+    grid-template-rows: 45% 10% 45%;
+    grid-template-columns: 30% 40% 30%;
+}
+.menu-title {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    z-index: 2;
+}
+.menu-title:hover {
+    opacity: 100%;
+}
+.cover-overlay {
+    width: 50vw;
+    height: 55vw;
+    grid-row: 2;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.cover-overlay:hover {
+    opacity: 0;
+    transition: 0.5s;
 }
