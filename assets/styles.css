@@ -19,11 +19,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Bell MT';
 }
 nav {
     background-color: black;
     text-decoration: none;
-    font-family: 'Bell MT';
+    
     width: 100%;
     height: 3vw;
     display:grid;
@@ -122,7 +123,6 @@ main>a:hover {
     color: white;
     display: grid;
     grid-template-columns: 2fr 4fr 1fr 3fr 2fr;
-    font-family: 'Bell MT';
     text-align: center;
     align-items: center;
     border-bottom: 0.05vw solid #D7A771;
@@ -168,6 +168,7 @@ footer {
     grid-template-rows: 10% 85% 5%;
     color: white;
     height: 22vw;
+    border-top: 0.05vw solid #D7A771;
 }
 #columns {
     grid-column: 2;
@@ -258,4 +259,88 @@ h5 {
 .cover-overlay:hover {
     opacity: 0;
     transition: 0.5s;
+}
+header {
+    height: 15vw;
+    border-top: 0.05vw solid #D7A771;
+    border-bottom: 0.05vw solid #D7A771;
+    background-image: url(images/history-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#header-overlay {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 15vw;
+    width: 100%;
+    z-index: 0;
+}
+h6 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0;
+    grid-row: 2;
+    letter-spacing: 0.3vw;
+    z-index: 1;
+}
+#history {
+    width: 100%;
+    height: 35vw;
+    background-color: #F6F2E9;
+    display: grid;
+    grid-template-columns: 13% 37% 2% 48%;
+    border-bottom: 0.05vw solid #D7A771;
+}
+#history-textbox {
+    grid-column: 2;
+    height: 35vw;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+}
+#history-textbox>h5 {
+    margin: 0;
+    opacity: 75%;
+    line-height: 1.5vw;
+    grid-row: 2;
+    border-left: 0.05vw solid #D7A771;
+    padding-left: 2vw;
+}
+#history-sketch {
+    grid-column: 4;
+    background-image: url(images/history-sketch.png);
+    background-size: 110%;
+    opacity: 75%;
+}
+#virtual-tour {
+    width: 100%;
+    height: 40vw;
+    display: grid;
+    grid-template-rows: 10% 20% 35% 35% 10%;
+}
+canvas {
+    width: 100%;
+    height: 40vw;
+    z-index: 0;
+}
+#virtual-tour>h1 {
+    color: white;
+    font-size: 1.5vw;
+    line-height: 3vw;
+    z-index: 3;
+    text-align: center;
+    grid-row: 2;
+    font-weight: bold;
+}
+#virtual-tour>h2 {
+    color: white;
+    font-size: 1.5vw;
+    line-height: 3vw;
+    z-index: 3;
+    text-align: center;
+    grid-row: 4;
 }
