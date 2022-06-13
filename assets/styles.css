@@ -7,8 +7,9 @@
     src: url(fonts/BellMT.ttf);
 }
 @font-face {
-    font-family: 'Bell MT italic';
+    font-family: 'Bell MT';
     src: url(fonts/BellMTItalic.ttf);
+    font-style: italic;
 }
 @font-face {
     font-family: 'Candara';
@@ -154,4 +155,54 @@ h2 {
 }
 #welcome-buttons>button>a {
     font-size: 2vw;
+}
+footer {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10% 70% 10% 10%;
+    color: white;
+    height: 25vw;
+}
+#columns {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1.5fr 0.9fr 1fr 0.8fr;
+}
+footer>h5 {
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+}
+#columns>div>img {
+    width: 80%
+}
+h3 {
+    font-size: 1.5vw;
+    text-align: center;
+    width: 80%;
+    line-height: 2;
+    font-style: italic;
+}
+h4 {
+    font-size: 1.4vw;
+    margin-top: 0;
+}
+h5 {
+    font-size: 1vw;
+    font-style: italic;
+    margin-top: 1vw;
+}
+#social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: left;
+}
+#social-buttons>button {
+    background: black;
+    border: none;
+    padding: 0;
+}
+#social-buttons>button>img {
+    width: 2vw;
 }
