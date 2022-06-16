@@ -70,6 +70,7 @@ a {
     text-decoration: none;
     font-size: 1.3vw;
     margin: 0;
+    transition: 0.3s;
 }
 li {
     text-align:center;
@@ -547,9 +548,13 @@ p {
     object-fit: cover;
     object-position: center center;
 }
+#feed>a {
+    transition: 0.5s;
+}
 #feed>a:hover {
     opacity: 100%;
     transform:scale(1.7);
+    transition: 0.5s;
 }
 #contact-header {
     background-image: url("images/contact.png");
