@@ -59,7 +59,7 @@ nav {
 ul {
     grid-row: 2;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 15% 25% 20% 25% 15%;
     width: 100%;
     margin: 0;
     grid-column: 2;
@@ -607,6 +607,7 @@ input {
     border: none;
     background-color: #F6F2E9;
     padding: 0;
+    text-indent: 0.5vw;
 }
 input:focus {
     outline: none;
@@ -628,4 +629,5 @@ input:focus {
 }
 #message {
     height: 7.5vw;
+    width: 36vw;
 }
