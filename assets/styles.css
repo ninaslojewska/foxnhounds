@@ -197,6 +197,7 @@ footer {
     color: white;
     height: 22vw;
     border-top: 0.05vw solid #D7A771;
+    padding-bottom: 1vw;
 }
 #columns {
     grid-column: 2;

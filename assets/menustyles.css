@@ -55,7 +55,7 @@ nav {
 nav>ul {
     grid-row: 2;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 15% 25% 20% 25% 15%;
     width: 100%;
     margin: 0;
     grid-column: 2;
@@ -373,6 +373,7 @@ footer {
     height: 22vw;
     border-top: 0.05vw solid #D7A771;
     background-color: black;
+    padding-bottom: 1vw;
 }
 #columns {
     grid-column: 2;
