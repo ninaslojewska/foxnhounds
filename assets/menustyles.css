@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'Bell MT';
+    src: url(fonts/BellMT.ttf);
+}
+@font-face {
+    font-family: 'Bell MT';
+    src: url(fonts/BellMTItalic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Candara';
+    src: url(fonts/Candara.ttf);
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #132130;
+    font-family: 'Bell MT';
+}
+nav {
+    background-color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 3vw;
+    display:grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 0.85vw 1.3vw 0.85vw;
+    z-index: 3;
+}
+@media only screen and (max-width: 950px) {
+    nav {
+        grid-template-rows: 10% 80% 10%;
+    }
+    nav>ul>li>a>img {
+        margin-top: 0.5vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    nav {
+        grid-template-rows: 1% 99%;
+    }
+    nav>ul {
+        grid-row: 1;
+    }
+    nav>ul>li {
+        margin-top: -5%;
+    }
+    nav>ul>li>a>img {
+        margin-top: 10%;
+    }
+}
+nav>ul {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+    margin: 0;
+    grid-column: 2;
+    padding: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+    margin: 0;
+}
+nav>ul>li {
+    text-align:center;
+    height: 1.3vw;
+    list-style-type: none;
+}
+a:hover {
+    opacity: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+nav>ul>li>a>img {
+    height: 1.5vw;
+    object-fit: cover;
+}
+header {
+    height: 15vw;
+    border-top: 0.05vw solid #D7A771;
+    border-bottom: 0.05vw solid #D7A771;
+    background-image: url(images/history-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#header-overlay {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15vw;
+    width: 100%;
+    z-index: 0;
+}
+h6 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0;
+    grid-row: 2;
+    letter-spacing: 0.3vw;
+    z-index: 1;
+}
+#foods-header {
+    background-image: url("images/foods.jpg");
+}
+main {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+main>img {
+    grid-column: 2;
+    grid-row: 2;
+    height: 10vw;
+    z-index: 1;
+}
+main>a {
+    grid-column: 2;
+    grid-row: 3;
+    z-index: 1;
+}
+main>a>img {
+    height: 25vw;
+}
+main>a:hover {
+    cursor: pointer;
+}
+#foods-menu {
+    background-color: white;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+    justify-items: left;
+    height: 100%;
+    padding: 0;
+}
+#foodslinks>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+#foodsmenudesc {
+    font-family: 'Candara';
+    grid-column: 3;
+    grid-row: 1;
+    color: #81544C;
+    font-size: 1.2vw;
+    padding: 28% 0 0 5%;
+    width: 90%;
+}
+#logo {
+    grid-column: 2;
+    grid-row: 1;
+    width: 25vw;
+    float: left;
+    padding: 10% 0 0 0;
+}
+#paperbag {
+    width: 1.1vw;
+}
+#sidepaperbag {
+    width: 1.7vw;
+    transform: translateY(0.3vw) translateX(-3vw);
+    position: absolute;
+}
+#foodslinks {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    padding-top: 20vh;
+    padding: 8% 0 0 10%;
+    max-width: 50%;
+}
+#categories {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.category {
+    font-size: 2.2vw;
+}
+.item-name {
+    color: #81544C;
+    padding: 1vw 0 0 0;
+    font-size: 1.6vw;
+}
+.other-name {
+    color: #81544C;
+    margin: 0 0 0 0;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+}
+.item-desc {
+    font-style: italic;
+    font-size: 1.3vw;
+    font-weight: normal;
+    margin: -1vw 0 0 0;
+    color: #81544C;
+    text-align: left;
+    letter-spacing: normal;
+}
+.extra {
+    font-size: 1.5vw;
+    font-weight: normal;
+    margin: -1.5vw 0 0 0;
+    color: #81544C;
+}
+#foodslinks>ul {
+    left: 0;
+    list-style-type: none;
+    margin: 0 0 0 -8%;
+    border-left: 0.05vw solid #D7A771;
+    font-size: 2.3vw;
+    line-height: 3vw;
+}
+#foxydinner {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    padding: 8% 0 0 10%;
+    max-width: 50%;
+}
+#snacks {
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    padding: 10% 0 0 10%;
+    max-width: 50%;
+}
+#courses {
+    grid-column: 2 / span 3;
+    grid-row: 5;
+    padding: 10% 0 0 10%;
+    max-width: 50%;
+}
+#sides {
+    grid-column: 2 / span 3;
+    grid-row: 6;
+    padding: 10% 0 0 10%;
+    max-width: 50%;
+}
+#burgers {
+    grid-column: 2 / span 3;
+    grid-row: 7;
+    padding: 10% 0 0 10%;
+    max-width: 50%;
+}
+#desserts {
+    grid-column: 2 / span 3;
+    grid-row: 8;
+    padding: 10% 0 0 10%;
+    max-width: 50%;
+}
+#kidsmenu {
+    grid-column: 2 / span 3;
+    grid-row: 9;
+    padding: 10% 0 20% 10%;
+    max-width: 50%;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+#foxydinner {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    padding: 8% 0 0 10%;
+    max-width: 50%;
+}
+
+/*DRINKS*/
+#drinks-header {
+    background-image: url("images/drinks.jpg");
+}
+#drinksmenu {
+    background-color: white;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+    justify-items: left;
+    height: 100%;
+    background-position: bottom center;
+    padding: 0;
+}
+#drinksmenudesc {
+    font-family: 'Candara';
+    grid-column: 3;
+    grid-row: 2;
+    color: #81544C;
+    font-size: 18px;
+    padding: 10% 0 0 5%;
+    width: 90%;
+}
+#logo2 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 25vw;
+    float: left;
+    padding: 16% 0 0 0;
+}
+#blended {
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    padding: 8% 0 0 10%;
+    max-width: 50%;
+}
+#singlemalt {
+    grid-column: 2 / span 3;
+    grid-row: 5;
+    padding: 10% 0 10% 10%;
+    max-width: 50%;
+}
+#drinks-buttons {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drinks-button {
+    background-color: #ffffff;
+    border: 0.1vw solid #D7A771;
+    padding: 1.5vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    margin: 2vw 0.7vw;
+    cursor: pointer;
+    font-family: 'Bell MT';
+    width: 12vw;
+  }
+.drinks-button>a {
+    color: black;
+}
+.drinks-button>a:hover {
+    opacity: 100%;
+}
+.drinks-button:hover {
+    background-color: #D7A771;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+.active {
+    background-color: #D7A771;
+    border: 0.1vw solid black;
+    color: #000000;
+    padding: 1.5vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    margin: 1vw 0.7vw;
+    cursor: pointer;
+    font-family: 'Bell MT';
+    width: 12vw;
+}
+footer {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10% 85% 5%;
+    color: white;
+    height: 22vw;
+    border-top: 0.05vw solid #D7A771;
+    background-color: black;
+}
+#columns {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1.5fr 0.9fr 1fr 0.8fr;
+}
+footer>h5 {
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+    margin: 0;
+}
+#columns>div>img {
+    width: 80%
+}
+#columns>div>h3 {
+    font-size: 1.5vw;
+    text-align: center;
+    width: 80%;
+    line-height: 3.5vw;
+    font-weight: normal;
+}
+#columns>div>h4 {
+    font-size: 1.4vw;
+    margin-top: 0;
+}
+#columns>div>h5 {
+    font-size: 1vw;
+    margin-top: 1vw;
+    font-weight: normal;
+}
+#social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: left;
+}
+#social-buttons>a>img {
+    width: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
