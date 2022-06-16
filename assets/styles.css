@@ -295,7 +295,7 @@ header {
 #header-overlay {
     position: absolute;
     display: block;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 15vw;
     width: 100%;
     z-index: 0;
@@ -533,4 +533,97 @@ p {
 }
 #ig-activity>div>a>img {
     height: 4vw;
+}
+#contact-header {
+    background-image: url("images/contact.png");
+}
+#contact {
+    background-color: #132130;
+    color:#D7A771;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 0.5vw 75vw 0.5vw;
+}
+#contact>div {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+#contact>div>h2 {
+    color: white;
+    line-height: 2vw;
+    font-size: 1.6vw
+}
+#contact>div>h1 {
+    font-size: 2.5vw;
+    line-height: 1.6vw;
+}
+#opening-hours {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1vw;
+    margin: 2vw 0;
+}
+#opening-hours>h2 {
+    color: white;
+    border-bottom: 0.05vw solid #D7A771;
+    padding-bottom: 0.7vw;
+    margin: 0;
+}
+#contact>diV>h4 {
+    font-style: italic;
+    color: #D7A771;
+    font-size: 1.6vw
+}
+#contact-form {
+    display: grid;
+    grid-template-rows: 2vw max-content 2vw;
+    grid-template-columns: 2vw max-content 2vw;
+    justify-items: center;
+    border: 0.05vw solid #D7A771;
+}
+form {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-row-gap: 1.5vw;
+}
+form>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3vw;
+}
+input {
+    width: 100%;
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 1.4vw;
+    height: 2.5vw;
+    font-family: 'candara';
+    border-radius: 0;
+    border: none;
+    background-color: #F6F2E9;
+    padding: 0.3vw 0.5vw 0;
+}
+input:focus {
+    outline: none;
+}
+#submit {
+    padding: 0;
+    height: 3vw;
+    width: 50%;
+    justify-self: center;
+    border: 0.05vw solid #D7A771;
+    background: black;
+    color: white;
+    font-family: 'Bell MT';
+}
+#submit:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#message {
+    height: 7.5vw;
 }
