@@ -345,7 +345,7 @@ h6 {
     width: 100%;
     height: 40vw;
     display: grid;
-    grid-template-rows: 10% 20% 35% 35% 10%;
+    grid-template-rows: 10% 20% 10% 20% 10% 20% 10%;
     background-image: url(images/tour.jpg);
     background-position: left center;
     background-size: 130%;
@@ -366,13 +366,23 @@ h6 {
     grid-row: 2;
     font-weight: bold;
 }
+#virtual-tour>a {
+    grid-row: 4;
+    justify-self: center;
+    z-index: 3;
+}
+#virtual-tour>a>img {
+    height: 100%;
+    filter: invert(100%);
+}
 #virtual-tour>h2 {
     color: white;
     font-size: 1.5vw;
     line-height: 3vw;
     z-index: 3;
     text-align: center;
-    grid-row: 4;
+    grid-row: 6;
+    margin: 0;
 }
 #events-header {
     background-image: url(images/events-header.jpg);
