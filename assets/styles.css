@@ -91,26 +91,37 @@ main {
     background-size: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5% 25% 70%;
+    grid-template-rows: 5% 8% 20% 67%;
     justify-items: center;
     height: 55vw;
     background-position: bottom center;
     padding: 0;
 }
-main>img {
+#enter {
     grid-column: 2;
     grid-row: 2;
-    height: 10vw;
-    z-index: 1;
-
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    color: #cc5936;
+    z-index: 0;
+    height: 60%;
+    display: none;
+    cursor: pointer;
 }
-main>a {
+main>img {
     grid-column: 2;
     grid-row: 3;
+    height: 8vw;
     z-index: 1;
+    display: none;
+    cursor: default;
 }
-main>a>img {
-    height: 30vw;
+#main-logo {
+    grid-column: 2;
+    grid-row: 4;
+    z-index: 1;
+    display: none;
+    height: 25vw;
 }
 #main-overlay {
     display: block;
@@ -118,6 +129,20 @@ main>a>img {
     height: 55vw;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
+}
+#link-overlay {
+    display: block;
+    width: 30%;
+    margin-left: 35%;
+    height: 4vw;
+    margin-top: 2vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+    cursor: pointer;
+}
+#hidden {
+    max-height: 100%;
 }
 #title {
     background-image: url("images/PFS_6615mørkere-redigeret.jpg");
