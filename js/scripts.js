@@ -1,25 +1,37 @@
+$('html, body').css({
+  overflow: 'hidden',
+  height: '100%'
+});
 
-let mybutton = document.getElementById("btn-back-to-top");
+$("button").ready(function () {
+  $("#enter").fadeIn(2000);
+});
 
 
-window.onscroll = function () {
-  scrollFunction();
-};
+$("button").ready(function () {
+  $("main>img").delay(1000).fadeIn(2000);
+});
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+$("button").ready(function () {
+  $("main>a").delay(1000).fadeIn(2000);
+});
 
-mybutton.addEventListener("click", backToTop);
+$(document).ready(function () {
+  $("#reveal").hide();
+      $("#link-overlay").click(function () {
+          $('#hidden').fadeOut("slow", function () {
+              var div = $("#hidden").hide();
+              $('#reveal').fadeIn("slow", function () {
+                  $("#reveal").css({
+                      visibility: 'visible'
+                  });
+                  $('html, body').css({
+                      overflow: 'auto',
+                      height: 'auto'
+                  });
+              });
+          });
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      });
+  });
+
