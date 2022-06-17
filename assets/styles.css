@@ -243,6 +243,7 @@ h5 {
     height: 55vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-top: 0.05vw solid #D7A771;
 }
 #drinks-cover {
     background-image: url(images/drinks.jpg);
