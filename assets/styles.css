@@ -107,6 +107,7 @@ main {
     height: 60%;
     display: block;
     cursor: pointer;
+    display: none;
 }
 main>img {
     grid-column: 2;
